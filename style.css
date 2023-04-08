@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(67,63,161);
+    background: linear-gradient(58deg, rgba(67,63,161,1) 0%, rgba(71,125,178,1) 50%, rgba(78,192,201,1) 100%); 
+}
+
+.container{
+    height: 500px;
+    min-width: 500px;
+}
+
+.cien{
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.one{
+    height: 80%;
+    width: 10%;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+
+    left: 6%;
+    z-index: 2;
+    filter: drop-shadow(1px 1px 9px #0000002f);
+}
+
+.detalle{
+    position: absolute;
+    height: 30%;
+    width: 8%;
+    background-color: white;
+    border-radius: 5px;
+    transform: rotate(50deg);
+    left: 5%;
+    top: 10%;
+}
+
+
+
+.cero_1{
+    height: 80%;
+    width: 40%;
+    border-radius: 50%;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -3%;
+    filter: drop-shadow(1px 1px 9px #0000002f);
+    z-index: 1;
+}
+
+.cero_1::after{
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    background: rgb(72,124,179);
+    background: linear-gradient(58deg, rgba(72,124,179,1) 0%, rgba(73,129,181,1) 50%, rgba(74,147,187,1) 100%); 
+    z-index: 2;
+}
+
+.cero_2{
+    height: 80%;
+    width: 40%;
+    border-radius: 50%;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    left: -3%;
+    filter: drop-shadow(1px 1px 9px #0000002f);
+}
+
+.cero_2::after{
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    background: rgb(72,124,179);
+    background: linear-gradient(58deg, rgba(72,124,179,1) 0%, rgba(73,129,181,1) 50%, rgba(74,147,187,1) 100%); 
+    z-index: 1;
+}
+
+.info{
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.info h1{
+    font-size: 10rem;
+    line-height: 70%;
+}
+
+.info p{
+    font-size: 3rem;
+    font-weight: bold; 
+}
